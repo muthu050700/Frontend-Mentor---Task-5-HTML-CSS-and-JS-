@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(234, 29%, 20%);
+  height: 100vh;
+  width: 100%;
+}
+.hide,
+.hidden {
+  display: none;
+}
+.card {
+  max-width: max-content;
+  max-height: max-content;
+  padding: 20px;
+  display: flex;
+  background-color: white;
+  border-radius: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main-img img {
+  height: 500px;
+}
+.left-content {
+  width: 350px;
+  height: 350px;
+  padding: 40px 0 50px 0;
+  margin: 0 35px 0 0;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.title h1 {
+  color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+}
+.title p {
+  font-size: 15px;
+}
+.usage {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 0 25px 0;
+}
+
+.usage-1,
+.usage-2,
+.usage-3 {
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+}
+.login-content {
+  display: flex;
+}
+
+.login-content .msg {
+  width: 71%;
+  display: flex;
+  justify-content: end;
+  visibility: hidden;
+}
+.left-content .error {
+  visibility: visible;
+  color: red;
+}
+.login > input,
+.login button {
+  width: 345px;
+  padding: 15px 0 15px 0;
+  margin: 8px 0 20px 0;
+  border: 1px solid rgb(110, 100, 100);
+  border-radius: 8px;
+}
+.login #submit {
+  color: white;
+  font-weight: 400;
+  background-color: hsl(234, 29%, 20%);
+}
+.login button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 89%, 74%) 0%,
+    #e78469 100%
+  );
+  cursor: pointer;
+  transition: 0.5s;
+}
+.login > input {
+  font-size: 18px;
+  padding-left: 20px;
+}
+.login .email_err {
+  border: 1px solid red;
+  color: red;
+}
+.container-sucess {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-sucess {
+  height: 440px;
+  width: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.sucess_main img {
+  height: 50px;
+}
+.sucess_main h1 {
+  color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+  position: relative;
+  top: 30px;
+  line-height: 55px;
+}
+.sucess_main p {
+  position: relative;
+  top: 50px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.sucess_main p span {
+  font-weight: 500;
+  font-weight: bold;
+  color: hsl(234, 29%, 20%);
+}
+.sucess_btn button {
+  position: relative;
+  top: 75px;
+  width: 330px;
+  padding: 15px 0 15px 0;
+  margin: 8px 0 20px 0;
+  border: 1px solid rgb(110, 100, 100);
+  border-radius: 8px;
+  font-weight: 400;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+}
+.sucess_btn button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 89%, 74%) 0%,
+    #e78469 100%
+  );
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media (min-width: 650px) and (max-width: 1000px) {
+  .left-content {
+    width: 300px;
+    height: 300px;
+    padding: 20px 0 35px 0;
+    margin: 0 35px 0 0;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .title h1 {
+    color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+  }
+  .title p {
+    font-size: 13px;
+  }
+  .usage {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 25px 0 25px 0;
+  }
+
+  .main-img img {
+    height: 400px;
+  }
+  .usage-1,
+  .usage-2,
+  .usage-3 {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .login-content .msg {
+    width: 66%;
+    display: flex;
+    justify-content: end;
+    visibility: hidden;
+    font-size: 12px;
+  }
+  .left-content .error {
+    visibility: visible;
+    color: red;
+  }
+  .login > input,
+  .login button {
+    width: 300px;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 5px 0;
+    border: 1px solid rgb(110, 100, 100);
+    border-radius: 8px;
+  }
+  .login #submit {
+    color: white;
+    font-weight: 300;
+    background-color: hsl(234, 29%, 20%);
+  }
+  .hide,
+  .hidden {
+    display: none;
+  }
+}
+@media (min-width: 375px) and (max-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    height: 100vh;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .mobile-img {
+    background-image: url(illustration-sign-up-mobile.svg);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .main-img img {
+    display: none;
+  }
+  .title p {
+    font-size: 13px;
+  }
+  .usage-1,
+  .usage-2,
+  .usage-3 {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .left-content {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
+  .login-content .msg {
+    width: 65%;
+    display: flex;
+    justify-content: end;
+    visibility: hidden;
+    font-size: 14px;
+  }
+  .left-content .error {
+    visibility: visible;
+    color: red;
+  }
+  .card-sucess {
+    height: 440px;
+    width: 300px;
+    padding: 0px;
+    background-color: white;
+    border-radius: 40px;
+  }
+  .sucess_main p {
+    position: relative;
+    top: 50px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .sucess_main p span {
+    font-weight: 500;
+    font-weight: bold;
+    color: hsl(234, 29%, 20%);
+  }
+  .sucess_btn button {
+    position: relative;
+    top: 210px;
+    width: 295px;
+    padding: 15px 0 15px 0;
+    margin: 8px 0 20px 0;
+    border: 1px solid rgb(110, 100, 100);
+    border-radius: 8px;
+    font-weight: 400;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+  }
+  .sucess_main h1 {
+    color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    height: 100vh;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .mobile-img {
+    background-image: url(illustration-sign-up-mobile.svg);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .main-img img {
+    display: none;
+  }
+  .title p {
+    font-size: 13px;
+  }
+  .usage-1,
+  .usage-2,
+  .usage-3 {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .left-content {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
+  .login-content .msg {
+    width: 65%;
+    display: flex;
+    justify-content: end;
+    visibility: hidden;
+    font-size: 14px;
+  }
+  .left-content .error {
+    visibility: visible;
+    color: red;
+  }
+  .login > input,
+  .login button {
+    width: 310px;
+    padding: 15px 0 15px 0;
+    margin: 8px 0 20px 0;
+    border: 1px solid rgb(110, 100, 100);
+    border-radius: 8px;
+  }
+  .title h1 {
+    color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+  }
+  .card-sucess {
+    height: 440px;
+    width: 300px;
+    padding: 0px;
+    background-color: white;
+    border-radius: 40px;
+  }
+  .sucess_main p {
+    position: relative;
+    top: 50px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .sucess_main p span {
+    font-weight: 500;
+    font-weight: bold;
+    color: hsl(234, 29%, 20%);
+  }
+  .sucess_btn button {
+    position: relative;
+    top: 245px;
+    width: 295px;
+    padding: 15px 0 15px 0;
+    margin: 8px 0 20px 0;
+    border: 1px solid rgb(110, 100, 100);
+    border-radius: 8px;
+    font-weight: 400;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+  }
+  .sucess_main h1 {
+    color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+    line-height: 40px;
+  }
+}
